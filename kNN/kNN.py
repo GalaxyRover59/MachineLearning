@@ -1,12 +1,6 @@
 from numpy import *
 
 
-def createDataSet():
-    group = array([[1.0, 1.1], [1.0, 1.0], [0, 0], [0, 0.1]])
-    labels = ['A', 'A', 'B', 'B']
-    return group, labels
-
-
 def img2vector(filename):
     """convert a n×n matrix to a 1×n matrix (vector)"""
     vector = zeros((1, 1024))
