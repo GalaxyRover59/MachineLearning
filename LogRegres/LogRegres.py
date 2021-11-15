@@ -7,7 +7,7 @@ def loadDaraSet():
     lableMat = []
     fr = open('testSet.txt')
     for line in fr.readlines():
-        lineArr = line.strip().split()  # strip()方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列
+        lineArr = line.strip().split()
         dataMat.append([1.0, float(lineArr[0]), float(lineArr[1])])
         lableMat.append(int(lineArr[2]))
     return dataMat, lableMat
